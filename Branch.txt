@@ -8,4 +8,4 @@ this is m2
 this is m3
 
 this is F1
-this is f2 and this is Feautre
+this is f2 and this is Feautre in Merge Branch
