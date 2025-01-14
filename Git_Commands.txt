@@ -1,0 +1,838 @@
+Administrator@0257530497995b1 MINGW64 ~/Desktop
+$ ls
+'Cisco Packet Tracer.lnk'*
+'Docker Desktop.lnk'*
+'Eclipse IDE for Java Developers - 2024-03.lnk'*
+'Microsoft Edge.lnk'*
+ MongoDBCompass.lnk*
+'OpenOffice 4.1.15 (en-GB) Installation Files'/
+ Postman.lnk*
+ ReadME.txt
+'Visual Studio Code.lnk'*
+ desktop.ini
+
+Administrator@0257530497995b1 MINGW64 ~/Desktop
+$ cd DevOps
+bash: cd: DevOps: No such file or directory
+
+Administrator@0257530497995b1 MINGW64 ~/Desktop
+$ cd ~
+
+Administrator@0257530497995b1 MINGW64 ~
+$ ls
+'3D Objects'/
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Desktop/
+ DevOps/
+ Documents/
+ Downloads/
+ Favorites/
+ Links/
+'Local Settings'@
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TM.blf
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ Pictures/
+ Postman/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
+'WPS Cloud Files'/
+ eclipse/
+ eclipse-workspace/
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+
+Administrator@0257530497995b1 MINGW64 ~
+$ cd Devops
+
+Administrator@0257530497995b1 MINGW64 ~/Devops
+$ cd Git
+
+Administrator@0257530497995b1 MINGW64 ~/Devops/Git
+$ ls
+PublicGit/
+
+Administrator@0257530497995b1 MINGW64 ~/Devops/Git
+$ cd PublicGit
+
+Administrator@0257530497995b1 MINGW64 ~/Devops/Git/PublicGit (main)
+$ ls
+README.md  TextFile.txt
+
+Administrator@0257530497995b1 MINGW64 ~/Devops/Git/PublicGit (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        TextFile.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Administrator@0257530497995b1 MINGW64 ~/Devops/Git/PublicGit (main)
+$ git config --global user.name "RASHANTH793"
+
+Administrator@0257530497995b1 MINGW64 ~/Devops/Git/PublicGit (main)
+$ git config --global user.email "jprashanth429@gmail.com"
+
+Administrator@0257530497995b1 MINGW64 ~/Devops/Git/PublicGit (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        TextFile.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Administrator@0257530497995b1 MINGW64 ~/Devops/Git/PublicGit (main)
+$ git add-
+git: 'add-' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+Administrator@0257530497995b1 MINGW64 ~/Devops/Git/PublicGit (main)
+$ git add TextFile
+fatal: pathspec 'TextFile' did not match any files
+
+Administrator@0257530497995b1 MINGW64 ~/Devops/Git/PublicGit (main)
+$ ^C
+
+Administrator@0257530497995b1 MINGW64 ~/Devops/Git/PublicGit (main)
+$ git add TextFile.txt
+
+Administrator@0257530497995b1 MINGW64 ~/Devops/Git/PublicGit (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   TextFile.txt
+
+
+Administrator@0257530497995b1 MINGW64 ~/Devops/Git/PublicGit (main)
+$ ls
+README.md  TextFile.txt  TextFile2.txt
+
+Administrator@0257530497995b1 MINGW64 ~/Devops/Git/PublicGit (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   TextFile.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        TextFile2.txt
+
+
+Administrator@0257530497995b1 MINGW64 ~/Devops/Git/PublicGit (main)
+$ git add .
+
+Administrator@0257530497995b1 MINGW64 ~/Devops/Git/PublicGit (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   TextFile.txt
+        new file:   TextFile2.txt
+
+
+Administrator@0257530497995b1 MINGW64 ~/Devops/Git/PublicGit (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   TextFile.txt
+        new file:   TextFile2.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   TextFile.txt
+
+
+Administrator@0257530497995b1 MINGW64 ~/Devops/Git/PublicGit (main)
+$ git log
+commit 0b78fba893623ef99ca593649550d102c6d3c7e4 (HEAD -> main, origin/main, origin/HEAD)
+Author: Prashanth <122040234+RASHANTH793@users.noreply.github.com>
+Date:   Tue Jan 14 10:06:38 2025 +0530
+
+    Initial commit
+
+Administrator@0257530497995b1 MINGW64 ~/Devops/Git/PublicGit (main)
+$ git commit -m "Files added"
+[main 1a638b3] Files added
+ 2 files changed, 2 insertions(+)
+ create mode 100644 TextFile.txt
+ create mode 100644 TextFile2.txt
+
+Administrator@0257530497995b1 MINGW64 ~/Devops/Git/PublicGit (main)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 311 bytes | 311.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To github.com:RASHANTH793/PublicGit.git
+   0b78fba..1a638b3  main -> main
+
+$ git diff
+diff --git a/TextFile.txt b/TextFile.txt
+index 35e19f3..ccc8472 100644
+--- a/TextFile.txt
++++ b/TextFile.txt
+@@ -1 +1,2 @@
+-I am Learning Git
+\ No newline at end of file
++I am Learning Git
++I am Software Engineer
+
+Administrator@0257530497995b1 MINGW64 ~/Devops/Git/PublicGit (main)
+$ git diff -w
+diff --git a/TextFile.txt b/TextFile.txt
+index 35e19f3..ccc8472 100644
+--- a/TextFile.txt
++++ b/TextFile.txt
+@@ -1 +1,2 @@
+ I am Learning Git
++I am Software Engineer
+
+
+Administrator@0257530497995b1 MINGW64 ~/Devops/Git/PublicGit (main)
+$ git diff --word-diff+ b/TextFile.txt
+@@ -1 +1,2 @@
+I am Learning Git
+{+I am Software Engineer+}
+
+Administrator@0257530497995b1 MINGW64 ~/Devops/Git/PublicGit (main)
+$ git diff --word-diff
+diff --git a/TextFile.txt b/TextFile.txt
+index 35e19f3..ab30273 100644
+--- a/TextFile.txt
++++ b/TextFile.txt
+@@ -1 +1,2 @@
+I am Learning Git
+{+I am SoftwareEngineer+}
+
+Administrator@0257530497995b1 MINGW64 ~/Devops/Git/PublicGit (main)
+$ git diff -w
+diff --git a/TextFile.txt b/TextFile.txt
+index 35e19f3..ab30273 100644
+--- a/TextFile.txt
++++ b/TextFile.txt
+@@ -1 +1,2 @@
+ I am Learning Git
++I am SoftwareEngineer
+
+Administrator@0257530497995b1 MINGW64 ~/Devops/Git/PublicGit (main)
+$ git diff --numstat
+2       1       TextFile.txt
+Administrator@0257530497995b1 MINGW64 ~/Devops/Git/PublicGit (main)
+$ git diff --stat
+ TextFile.txt | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+
+
+q! exit without saving the file in the Editor Mode
+wq Exit with saving thr file 
+
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (main)
+$ git diff 1a638b3 0b78fba
+diff --git a/TextFile.txt b/TextFile.txt
+deleted file mode 100644
+index 35e19f3..0000000
+--- a/TextFile.txt
++++ /dev/null
+@@ -1 +0,0 @@
+-I am Learning Git
+\ No newline at end of file
+diff --git a/TextFile2.txt b/TextFile2.txt
+deleted file mode 100644
+index 35e19f3..0000000
+--- a/TextFile2.txt
++++ /dev/null
+@@ -1 +0,0 @@
+-I am Learning Git
+\ No newline at end of file
+
+
+
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (main)
+$ git diff
+diff --git a/TextFile.txt b/TextFile.txt
+index e179f4b..7371462 100644
+--- a/TextFile.txt
++++ b/TextFile.txt
+@@ -1,3 +1,4 @@
+ I am Learning Git
+ I am SoftwareEngineer
+ I love Coding
++I am Learning DevOps
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (main)
+$ git diff --cached
+diff --git a/TextFile.txt b/TextFile.txt
+index ab30273..e179f4b 100644
+--- a/TextFile.txt
++++ b/TextFile.txt
+@@ -1,2 +1,3 @@
+ I am Learning Git
+ I am SoftwareEngineer
++I love Coding
+
+
+Working tree to Staged Area we use git diff
+Staged Area to local Repository We use git diff--cached/Staged
+HEAD is where the cureent branch is pointing to OR
+In Branch Which is last Commited trancsaction is to know as HEAD
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (main)
+$ cd ..
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git
+$ rm -rf PublicGit
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git
+$ ls
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git
+$ git clone git@github.com:RASHANTH793/PublicGit.git
+Cloning into 'PublicGit'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 6 (delta 0), reused 3 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (6/6), done.
+
+
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (main)
+$ git commit -m "M1 is Commited"
+[main e76c39a] M1 is Commited
+ 1 file changed, 1 insertion(+)
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (main)
+$ git add .
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (main)
+$ git commit -m "M2 is Commited"
+[main 5f433c9] M2 is Commited
+ 1 file changed, 1 insertion(+)
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (main)
+$ git add .
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (main)
+$ git commit -m "M3 is Commited"
+[main ab58e22] M3 is Commited
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (main)
+$ git log
+commit ab58e22523ab4b89fb74fe17275cb39764770174 (HEAD -> main)
+commit ab58e22523ab4b89fb74fe17275cb39764770174 (HEAD -> main)
+Author: RASHANTH793 <jprashanth429@gmail.com>
+Date:   Tue Jan 14 15:17:36 2025 +0530
+
+    M3 is Commited
+
+commit 5f433c9938119279b07a96d733e4eb916a16187f
+Author: RASHANTH793 <jprashanth429@gmail.com>
+Date:   Tue Jan 14 15:17:16 2025 +0530
+
+    M2 is Commited
+
+commit e76c39a2fd5c62726a5300a7babb2aa998eff55e
+Author: RASHANTH793 <jprashanth429@gmail.com>
+Date:   Tue Jan 14 15:16:51 2025 +0530
+
+    M1 is Commited
+
+commit 8be84f102e87f28b5dc5d0bb4175f5c3c7fe4d08
+Author: RASHANTH793 <jprashanth429@gmail.com>
+Date:   Tue Jan 14 15:15:33 2025 +0530
+
+    Initial Commit
+
+commit 1a638b31ee7584aee75dd328b1c335f09e6bde36 (origin/main, origin/HEAD)
+Author: RASHANTH793 <jprashanth429@gmail.com>
+Date:   Tue Jan 14 10:58:22 2025 +0530
+
+    Files added
+
+commit 0b78fba893623ef99ca593649550d102c6d3c7e4
+Author: Prashanth <122040234+RASHANTH793@users.noreply.github.com>
+Date:   Tue Jan 14 10:06:38 2025 +0530
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (main)
+$ git log --oneline
+ab58e22 (HEAD -> main) M3 is Commited
+5f433c9 M2 is Commited
+e76c39a M1 is Commited
+8be84f1 Initial Commit
+1a638b3 (origin/main, origin/HEAD) Files added
+0b78fba Initial commit
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (main)
+$ git checkout -b "Feature"
+Switched to a new branch 'Feature'
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (Feature)
+$ git log --oneline
+ab58e22 (HEAD -> Feature, main) M3 is Commited
+5f433c9 M2 is Commited
+e76c39a M1 is Commited
+8be84f1 Initial Commit
+1a638b3 (origin/main, origin/HEAD) Files added
+0b78fba Initial commit
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (Feature)
+$ git add .
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (Feature)
+$ git commit -m "F1"
+[Feature 5a25855] F1
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (Feature)
+$ git add .
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (Feature)
+$ git commit -m "F2"
+[Feature 9234745] F2
+ 1 file changed, 1 insertion(+)
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (Feature)
+$ git log --oneline
+9234745 (HEAD -> Feature) F2
+5a25855 F1
+ab58e22 (main) M3 is Commited
+5f433c9 M2 is Commited
+e76c39a M1 is Commited
+8be84f1 Initial Commit
+1a638b3 (origin/main, origin/HEAD) Files added
+0b78fba Initial commit
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (Feature)
+$ git branch
+* Feature
+  main
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (Feature)
+$ git log --oneline
+9234745 (HEAD -> Feature) F2
+5a25855 F1
+ab58e22 (main) M3 is Commited
+5f433c9 M2 is Commited
+e76c39a M1 is Commited
+8be84f1 Initial Commit
+1a638b3 (origin/main, origin/HEAD) Files added
+0b78fba Initial commit
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (Feature)
+$ git merge Feature
+Already up to date.
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (Feature)
+$ git log --oneline
+9234745 (HEAD -> Feature) F2
+5a25855 F1
+ab58e22 (main) M3 is Commited
+5f433c9 M2 is Commited
+e76c39a M1 is Commited
+8be84f1 Initial Commit
+1a638b3 (origin/main, origin/HEAD) Files added
+0b78fba Initial commit
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (Feature)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (main)
+$ git log --oneline
+ab58e22 (HEAD -> main) M3 is Commited
+5f433c9 M2 is Commited
+e76c39a M1 is Commited
+8be84f1 Initial Commit
+1a638b3 (origin/main, origin/HEAD) Files added
+0b78fba Initial commit
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (main)
+$ git merge Feature
+Updating ab58e22..9234745
+Fast-forward
+ Branch.txt | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (main)
+$ git log --oneline
+9234745 (HEAD -> main, Feature) F2
+5a25855 F1
+ab58e22 M3 is Commited
+5f433c9 M2 is Commited
+e76c39a M1 is Commited
+8be84f1 Initial Commit
+1a638b3 (origin/main, origin/HEAD) Files added
+0b78fba Initial commit
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (main)
+$ git merge Feature
+Updating ab58e22..9234745
+Fast-forward
+ Branch.txt | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (main)
+$ git log --oneline
+9234745 (HEAD -> main, Feature) F2
+5a25855 F1
+ab58e22 M3 is Commited
+5f433c9 M2 is Commited
+e76c39a M1 is Commited
+8be84f1 Initial Commit
+1a638b3 (origin/main, origin/HEAD) Files added
+0b78fba Initial commit
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (main)
+$ git add .
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (main)
+$ git commit -m "F3"
+[main 4272e2d] F3
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (main)
+$ git log --oneline
+4272e2d (HEAD -> main) F3
+9234745 (Feature) F2
+5a25855 F1
+ab58e22 M3 is Commited
+5f433c9 M2 is Commited
+e76c39a M1 is Commited
+8be84f1 Initial Commit
+1a638b3 (origin/main, origin/HEAD) Files added
+0b78fba Initial commit
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (main)
+$ git checkout Feature
+Switched to branch 'Feature'
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (Feature)
+$ git status
+On branch Feature
+nothing to commit, working tree clean
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (Feature)
+$ git log --oneline
+9234745 (HEAD -> Feature) F2
+5a25855 F1
+ab58e22 M3 is Commited
+5f433c9 M2 is Commited
+e76c39a M1 is Commited
+8be84f1 Initial Commit
+1a638b3 (origin/main, origin/HEAD) Files added
+0b78fba Initial commit
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (Feature)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 7 commits.
+  (use "git push" to publish your local commits)
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 7 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (main)
+$ git add .
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (main)
+$ git commit -m "Merge Updated"
+[main 3875353] Merge Updated
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (main)
+$ git log --oneline
+3875353 (HEAD -> main) Merge Updated
+4272e2d F3
+9234745 (Feature) F2
+5a25855 F1
+ab58e22 M3 is Commited
+5f433c9 M2 is Commited
+e76c39a M1 is Commited
+8be84f1 Initial Commit
+1a638b3 (origin/main, origin/HEAD) Files added
+0b78fba Initial commit
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (main)
+$ git add .
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (main)
+$ git commit -m "F5"
+[main 951b7f5] F5
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (main)
+$ git log --oneline
+951b7f5 (HEAD -> main) F5
+3875353 Merge Updated
+4272e2d F3
+9234745 (Feature) F2
+5a25855 F1
+ab58e22 M3 is Commited
+5f433c9 M2 is Commited
+e76c39a M1 is Commited
+8be84f1 Initial Commit
+1a638b3 (origin/main, origin/HEAD) Files added
+0b78fba Initial commit
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (main)
+$ git checkout Feature
+Switched to branch 'Feature'
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (Feature)
+$ git add .
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (Feature)
+$ git commit -m "F6"
+[Feature 90a80c6] F6
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (Feature)
+$ git log --oneline
+90a80c6 (HEAD -> Feature) F6
+9234745 F2
+5a25855 F1
+ab58e22 M3 is Commited
+5f433c9 M2 is Commited
+e76c39a M1 is Commited
+8be84f1 Initial Commit
+1a638b3 (origin/main, origin/HEAD) Files added
+0b78fba Initial commit
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (Feature)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 9 commits.
+  (use "git push" to publish your local commits)
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (main)
+$ git merge Feature
+Auto-merging Branch.txt
+CONFLICT (content): Merge conflict in Branch.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (main|MERGING)
+$ ls
+Branch.txt  README.md  TextFile.txt  TextFile2.txt
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (main|MERGING)
+$ cat Branch.txt
+I am Learning Git
+I am SoftwareEngineer
+I love Coding
+I am Learning DevOps and JAVA
+this is m1
+this is m2
+this is m3
+<<<<<<< HEAD
+this is F1 this is  a change done in the same line
+this is f2 and this is Feautre in Merge Branch
+=======
+this is F1 Changes done in Feature branch
+this is f2
+>>>>>>> Feature
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (Feature)
+$ git log --oneline
+9234745 (HEAD -> Feature) F2
+5a25855 F1
+ab58e22 M3 is Commited
+5f433c9 M2 is Commited
+e76c39a M1 is Commited
+8be84f1 Initial Commit
+1a638b3 (origin/main, origin/HEAD) Files added
+0b78fba Initial commit
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (Feature)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 7 commits.
+  (use "git push" to publish your local commits)
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 7 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (main)
+$ git add .
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (main)
+$ git commit -m "Merge Updated"
+[main 3875353] Merge Updated
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (main)
+$ git log --oneline
+3875353 (HEAD -> main) Merge Updated
+4272e2d F3
+9234745 (Feature) F2
+5a25855 F1
+ab58e22 M3 is Commited
+5f433c9 M2 is Commited
+e76c39a M1 is Commited
+8be84f1 Initial Commit
+1a638b3 (origin/main, origin/HEAD) Files added
+0b78fba Initial commit
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (main)
+$ git add .
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (main)
+$ git commit -m "F5"
+[main 951b7f5] F5
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (main)
+$ git log --oneline
+951b7f5 (HEAD -> main) F5
+3875353 Merge Updated
+4272e2d F3
+9234745 (Feature) F2
+5a25855 F1
+ab58e22 M3 is Commited
+5f433c9 M2 is Commited
+e76c39a M1 is Commited
+8be84f1 Initial Commit
+1a638b3 (origin/main, origin/HEAD) Files added
+0b78fba Initial commit
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (main)
+$ git checkout Feature
+Switched to branch 'Feature'
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (Feature)
+$ git add .
+I am Learning Git
+
+
+
+
+
+This message is displayed because 'merge.tool' is not configured.
+See 'git mergetool --tool-help' or 'git help config' for more details.
+'git mergetool' will now attempt to use one of the following tools:
+opendiff kdiff3 tkdiff xxdiff meld tortoisemerge gvimdiff diffuse diffmerge ecmerge p4merge araxis bc codecompare smerge emerg
+e vimdiff nvimdiff
+Merging:
+Branch.txt
+
+Normal merge conflict for 'Branch.txt':
+  {local}: modified file
+  {remote}: modified file
+Hit return to start merge resolution tool (vimdiff):
+4 files to edit
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (main|MERGING)
+$
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (main|MERGING)
+$
+
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (main|MERGING)
+$
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (main|MERGING)
+$
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (main|MERGING)
+$
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (main|MERGING)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 9 commits.
+  (use "git push" to publish your local commits)
+
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+        modified:   Branch.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Branch.txt.orig
+
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (main|MERGING)
+$ git add .
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (main|MERGING)
+$ git commit -m "Manually Fixed the conflict and merged"
+[main 2e9e648] Manually Fixed the conflict and merged
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 11 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Administrator@0257530497995b1 MINGW64 ~/DevOps/Git/PublicGit (main)
+$ git log --oneline
+2e9e648 (HEAD -> main) Manually Fixed the conflict and merged
+90a80c6 (Feature) F6
+951b7f5 F5
+3875353 Merge Updated
+4272e2d F3
+9234745 F2
+5a25855 F1
+ab58e22 M3 is Commited
+5f433c9 M2 is Commited
+e76c39a M1 is Commited
+8be84f1 Initial Commit
+1a638b3 (origin/main, origin/HEAD) Files added
+0b78fba Initial commit
+
+
