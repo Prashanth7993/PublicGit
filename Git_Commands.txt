@@ -836,3 +836,72 @@ e76c39a M1 is Commited
 0b78fba Initial commit
 
 
+
+-----------------------------------------------------
+ mkdir Practise
+  208  cd Practise
+  209  mkdir Project
+  210  cd Project
+  211  ls
+  212  git status
+  213  git init
+  214  git status
+  215  git add .
+  216  git commit -m "m1"
+  217  git add .
+  218  git commit -m "m1"
+  219  git add .
+  220  git commit -m "m3"
+  221  git log --oneline
+  222  git branch CompanyProject
+  223  git brach
+  224  git branch
+  225  git checkout CompanyProject
+  226  ls
+  227  git status
+  228  git add .
+  229  git commit -m "f1"
+  230  git add .
+  231  git commit -m  "f2"
+  232  git checkout master
+  233  git log --oneline
+  234  git merge CompanyProject
+  235  git log --oneline
+  236  git checkout CompanyProject
+  237  git status
+  238  git add .
+  239  git commit -m "f3"
+  240  git checkout master
+  241  git statu
+  242  git status
+  243  git add .
+  244  git commit -m "m4"
+  245  git log --oneline
+  246  git checkout CompanyProject
+  247  git log --oneline
+  248  git checkout master
+  249  git merge CompanyProject
+  250  git log --oneline
+  251  git checkout CompanyProject
+  252  git add .
+  253  git commit -m  "m5"
+  254  git checkout master
+  255  git merge CompanyProject
+  256  git merge CompanyProject
+  257  git mergetool
+  258  cd ls
+  259  ls
+  260  cd Practise/Project
+  261  git mergetool
+  262  ls
+  263  cat Text.txt.orig
+  264  rm -rf Text.txr.orig
+  265  git add .
+  266  git commit -m "Merging CompanyProject to master with conflict after resloving conflict"
+  267  clear
+  268  git log --oneline
+  269  git diff 3d78a04 3642ffe
+  270  history
+
+
+
