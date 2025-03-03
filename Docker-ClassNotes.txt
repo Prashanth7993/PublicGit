@@ -1,0 +1,154 @@
+Docker:
+	All the Linux work with same kernel.
+	It will work with under line host kernel.
+	We can create a docker image in one Linux and can run in another Linux ( here docker will directly talk to the kernel ).
+
+Docker on window:
+	Internally docker will work on Linux kernel
+	But in windows we have Docker desktop
+	Docker desktop will work on windows by enabling WSL ( Windows SubSystem for Linux )
+
+DL: How do you create windows related containers.
+
+
+Hypervisior:
+	It can create and maintainer Virtual machine
+	
+			
+		VM1      VM2 	 VM3
+	      kernel   kernel   kernel
+
+		     LIB     BIN
+
+			KERNEL
+		
+		       Hardware
+
+
+Docker has:
+		
+	VM1    VM2     VM3
+     lib bin  lib bin lib bin
+
+		Docker
+		Kernel
+		Hardware
+
+
+
+Docker container is created by an image 
+one image many containers
+and we can create an image by the container.
+
+snapshot:	
+	any changes in vm that will be automatically written to the snapshot.
+
+images are read only file system it is different from snapshot.
+
+
+Container - Containers are always created from image.
+Image - Image can be local or remote(dockerhub).
+
+
+Docker containers are affimeral ( it can start and shutdown in less time )
+
+To create and get into container
+
+	docker run -it ubuntu(Image name) bash/ sh ( It will create and get into the container and access the terminal inside the ubuntu container )
+  	If you don't specify the bash / sh by default it will open the terminal inside the container.
+
+docker container is an simple process not OS.
+
+
+All the images and the container are stored in the storage driver
+	Path : /var/lib/docker/
+	
+	images are stored in the overlay2 by 
+	There are four layers images stored
+		LowerDir
+		MergedDir
+		UpperDir
+		WorkDir
+
+
+
+image caching
+	Suppose we have a 10 layers instruction in docker file and build has been completed. and when we a change in any line let us assume 5 line has been changed 
+1-4 lines will not be rebuild from 5 line it starts rebuild even we don't have a
+change in 6-10 line
+
+
+FROM
+   FROM command represent the base layer of the image.
+Run
+   Run command will excute the operations in build time.
+
+CMD
+  it will define a default instruction that will get executed if we don't pass any instruction
+  when we give an instruction while running the container default instruction will 
+  not get executed.
+
+ENTRYPOINT
+   
+
+
+
+-------------------------------------------------
+Docker networking
+	IP Address
+	Ethernet card
+	Ethernet cable
+	Gateway
+	Nating / DNating
+	Subnetting
+	Network Switch / 
+
+
+	IP:
+	unique routable address which was given to the device on network which follows network protocol.
+	and network has subnets.
+
+
+
+Docker zero will be installed when we installed docker.
+Docker zero is the switch which communicate the data between two different conatiners
+Docker will have 6 diff network:
+	but it uses only 3 net
+		- bridge network
+		- Host network
+		- None network
+
+
+	-Bridge network is docker 0
+	     By default will have bridge network that is docker 0
+
+	container 		container
+	   eth0			  eth0	
+	      Veth         Veth	
+		   docker0
+
+      IP table		
+		    eth0
+
+
+If none of the container respond docker0 will sent to default etho0.
+docker 0 has 172.17.0.1 - 172.17.255.255
+	subnet is 172.17.0/16
+
+  
+
+
+When we create a container and connect to host network It conneting to the host machine network and
+when we are  creating different container and connecting with same host network , but when any process listening\
+on port 80 and trying to connect another container with same port it won't allow.
+
+
+
+
+
+
+
+
+
+
+

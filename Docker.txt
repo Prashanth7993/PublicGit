@@ -1,0 +1,49 @@
+Docker:
+	It is a containerization platform to simplify the process of building, running, managing the application by using containers.
+	Containers are lightweight, portable units.
+	In containers stores package of application and application needs like code, libraries, dependencies.
+	So that applications can work efficiently in different environment.
+
+
+
+How Does Docker work:
+	In our host machine an docker Engine or docker is a base engine in our computer to build and run containers using docker components and services.
+	It uses client-server architecture.
+	Comminication will be done through REST API between client and server.
+
+
+DOCKER ENGINE:	
+---------------------------------------------------------------
+	CLIENT					SERVER
+      Docker CLI <-----------REST-API-------> Docker Daemon
+
+----------------------------------------------------------------
+
+
+COMPONENTS OF COMPONENTS:
+	
+	Docker Client-Server Architecture
+		      
+		Docker Images
+
+	Docker Containers
+	
+	Docker Registry
+
+A container is a runnable instance of an image.
+
+Give me a best youtube or website that deeply explain about docker
+
+We can also add one or more networks, attach storage, create a new image from container.
+
+You can create, start, stop, move, or delete a container using the Docker API or CLI.
+
+Images are read only and Containers are read write
+
+Docker uses a technology called namespaces to provide the isolated workspace called the container.
+
+When you run a container, Docker creates a set of namespaces for that container.
+
+
+
+

@@ -1,0 +1,71 @@
+Show the images
+	docker images
+Remove the images
+	docker rmi image_name
+Remove  only all stop containers at a time
+	docker container prune
+Pull the image from the hub.docker.com
+	docker pull image_name
+
+
+docker images
+docker rmi imga_name
+docker rm container_id
+docker ps
+docker ps -a
+docker run -it image_name bash
+docker start container_id
+docker stop continaer_id
+docker exec -it container_id bash
+docker image inspect image_name
+docker tag image_name dockeruserId/image_name
+docker login -u user_namedocker the pass or token
+docker push dockeruser_name/image_name
+docker run -d image_name
+docker run -p 80:80 image_name
+	-p -> port forwording
+	80 -> host machine
+	80 -> container 
+docker run -p 80:80 -d nginx
+ps -ef | grep runc
+docker run -d --restart=always image_name
+docker commit -m "Message" container_id Image_name
+
+
+-----------------
+docker ps stop $(docker ps -a -q)
+docker ps rm $(docker ps -a)	
+docker run -d --memory-reservation=750 nginx
+docker top container_id
+docker stats
+CMD
+RUN
+FROM
+ENTRYPOINT
+
+docker run -d -p 8080:8080 image_name
+
+
+-------------------
+bind mount
+     docker run -it -v /hostmachineFolderName:/ContainerFoldername Imagename bash
+	docker run -it -v /hostdb:/contdb ubuntu bash
+
+docker run -d -e MYSQL_ROOT_PASSWORD=admin -v /home/docker/mysql-data:/var/lib/mysql --name mysqlserver MySQL
+
+
+-------------
+docker container inspect container_name
+docker network ls
+docker network create networkname(it can be any name)
+docker run -d --net networkname image_name
+docker run -it --net networkname imagename ash
+docker run -d --net host nginx -> curl localhost
+docker log container_id
+
+
+
+
+
+
+
