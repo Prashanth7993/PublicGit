@@ -142,6 +142,41 @@ When we create a container and connect to host network It conneting to the host 
 when we are  creating different container and connecting with same host network , but when any process listening\
 on port 80 and trying to connect another container with same port it won't allow.
 
+-------------------
+docker Compose:
+	by using docker compose it can automatically create image and also the container.
+	we can mention an image in docker compose file
+	first it will create a bridge network and all the containers created in that will be connected to that network.
+	when we create a file docker-compose.yaml
+	when we run the file with cmd docker compose up -d ( if the was docker-compose.yaml)
+		docker compose -f dc1.yaml uo -d ( if file was different than docker-compose.yaml )
+
+
+
+
+-------------------
+docker swarm:
+	Swarm mode is an advanced feature for managing a cluster of Docker daemons.
+	cluster:
+		a group of servers that act as a single system so that we can have high availability,parallel processing,load balancing.
+
+	docker swarm can do multiple things like what Kubernetes do.
+	but Kubernetes do more advance things than swarm do.
+	Kubernetes can manage each and every thing when any container got killed then automatically 
+	Kubernetes can create a another new container. and many more.
+
+
+First:
+  To do Swarm 
+	1.a long key will be generated copy it and paste it into another node with super user (sudo)
+		Cmd docker swarm init
+		Ex: docker swarm join --token SWMTKN-1-3fj1tk6ntbz7n0tssn4sajx64kerh26ajdl6orha91coc8hvry-auoeriqi48lwrtbi7r21ygr18 192.168.219.137:2377
+
+	2.check log of swarm of master and worker's
+		docker node ls
+		
+
+
 
 
 
