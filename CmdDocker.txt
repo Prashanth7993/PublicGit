@@ -63,6 +63,31 @@ docker run -it --net networkname imagename ash
 docker run -d --net host nginx -> curl localhost
 docker log container_id
 
+--------------
+
+docker create volume voulume_name
+docker volume ls
+docker volume insepect volume_name
+docker volume rm volume_name
+docker volume prune
+
+
+
+
+-------------------
+
+docker compose up -d
+docker compose -f dc1.yaml up -d
+
+
+
+
+
+----------
+docker swarm init
+docker node ls -> to display all the nodes
+	where * display that node is the leader for all the rest of nodes.
+
 
 
 
