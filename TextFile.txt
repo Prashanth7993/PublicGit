@@ -1,1 +1,151 @@
-I am Learning Git
+Docker
+ 
+One image multiple containers
+From a container we can create an image.
+Docker images are read only
+ 
+Containers are created only from local images only and if the image is not found in locally it gets from internet and download locally and creates a container
+ 
+Docker Daemon
+Docker Client
+Docker Server
+ 
+ECR (Elastic Container Registry)
+ 
+Tag – Creating an image from an image
+ 
+Ps -ef : returns all process running
+ 
+File System
+Process Running
+Network
+IP
+Sockets
+Ports
+User
+Hostname
+IPC vs RPC
+Cow- Copy On Write
+Writable layer interface
+cgroup -control group – Helps to us monitor the process usage level might be space, usage etc..
+ 
+Less the number of layers the better the runtime performance of the container
+Through commit we can create an image from the container
+Docker commit -m “Message” ContainerId “Name”
+Images are layered file system
+ 
+Docker file commands
+FROM  - defines the baseline layer of the image
+From scrath
+From dockerimagename
+Multiple from’s  can be used
+RUN – It is used to execute the commands
+CMD _ it defines the default instruction to execute when starting the container
+EntryPoint – It converts the container to run as an executable
+ENV
+Add
+EXPOSE
+COPY
+ 
+Creation of Image from container: - commit does the creation of image from container
+docker commit -m “message” -a “authorname” container_id repository/image_name
+ 
+Tagging helps in creation of image from image:
+Docker tag image_id dockerusername/imagename
+ 
+Docker prune kills the containers which are not active
+ 
+ 
+DOCKER SAVE,EXPORT, LOAD, IMPORT:
+Save – Produce a tarball with all parent layers and tags +Versions
+Export – Produces a tarbal without any layers/history
+Import – creates an image from the tarball which is not even an image                                                       
+ 
+VOLUME:
+Docker supports 3 types of volumes
+Tmpfs:
+Stored in memory and not written to host systems filesystem
+bindmount:
+Stored in the host and container by binding a specific folder
+Can be modified in host and container
+docker run -d --name=nginxtest -v /home/nginx-vol:/usr/share/nginx/html nginx:latest
+docker volumes
+anonymus volumes
+Named volumes:
+docker run -d --name=nginxtest -v nginx-vol:/usr/share/nginx/html nginx:latest
+ 
+ 
+ 
+ 
+ 
+ 
+Docker Networking
+IP address: Unique routable address given to device
+Ethernet
+Ethernet Cable
+Network Switch
+Gateway
+Natting/Denatting
+Subnetting
+ 
+veth: virtual ethernet cable
+docker0 – Network switch
+Docker supports 6 networks but 3 are supported in advanced mode and 3 are supported in normal mode
+Bridge Network
+None Network
+Host Network
+Supported in docker swarm
+Overlay
+Ipvlan
+Macvlan
+ 
+Creation of Network:
+docker network create -d bridge my_bridge
+        -d signifies the driver type
+ 
+Adding container to the network:
+        Docker run -d –net=network_name imagename
+To connect container to a specific network
+        Docker network connect network_name containerid
+ 
+Docker system prune removes all unused resources in the docker except unused volumes
+ 
+04/03/2025
+Docker Compose: Define and run multi-container applications with docker.
+It will first create a new bridge network and all the containers are attached to the bridge network.
+Profiles can be used in docker-compose file where by executing without profile option. It is generally used when we want to execute a specific containers by mentioning explicitly.
+ 
+Docker Compose: Tool to combine multiple images/ applications in a single file through which we can build and run an application using a single command.
+ 
+Commands:
+Creation and start containers, networks and volume
+Docker-compose -f docker-compose.yaml up
+ 
+Stop and remove containers, networks, images and volumes
+Docker-compose -f docker-compose.yaml down
+ 
+Build or rebuild services:
+Docker-compose -f docker-compose.yaml build
+ 
+Start existing containers for a service
+Docker-compose -f docker-compose.yaml start
+ 
+Graceful stop and remove
+Docker-compose -f docker-compose.yaml stop
+Docker-compose -f docker-compose.yaml rm
+ 
+Checking logs of the containers
+Docker-compose logs
+Docker-compose -f dc.yaml logs
+ 
+In compose file we define the services and we mention different parameters for that services from where the image should come from etc..
+ 
+ 
+ 
+ 
+ 
+5/3/2025
+Docker Swarm:
+Docker mesh:
+Docker swarm leave –force for master for workers -force is not needed.
+Rolling Upgrade
