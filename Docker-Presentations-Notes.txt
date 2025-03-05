@@ -1,0 +1,50 @@
+What is docker?
+	docker is an containerized platform used to simply the process for creating,running, the applications by using containers.
+	
+What is Image?
+	Image is a layered file system that used to create a container and
+	Images are read only - if any changes done in the container it doesn't effect the image
+	an image is a lightweight, standalone, and executable package that includes everything needed to run a piece of software
+	such as the application code, runtime, libraries, dependencies, and system tools.
+	Images are identified by names and tags (e.g., nginx:latest, ubuntu:20.04), which help specify versions or variants.
+
+How the Images is Created?
+	Image can be created either by using the built-in images from docker hub
+		or
+	Images can be created from the docker file
+	In docker file each From cmd will start from base layer of the image.
+	and then it will perform some operations and create a layer on top of the base layer images.
+	we can also create a image from a container.
+
+Image caching:
+	Image caching will reduce the build time of the image 
+Internal Working:
+		I have a docker file to create a image of nginx with 7 layers
+		and i have another docker file which has 4 lines equal from the docker file which creats nginx 
+		then to reduce the build time of the image creating docker server will take the layers upto 4 from nginx and create
+		rest of layer from a docker file.		
+	
+Internal things of Image creation?
+	First: docker client will send the request to the docker daemon inside the docker host 
+		client and server communication will be done through rest api
+		daemon will check if the image was stored in the overlay2 or not if image was persist
+		it will use the image and create container if the image not persist 
+		it will get the image from the registry
+		and store it in overlay2 and then use it for creating a container.
+		Docker client and docker host will communicate through rest API.
+
+Where the Image is getting stored?
+	Images are getting stored in /var/lib/docker/overlay2/
+
+
+Practical:
+	create a docker image by pulling image from registry
+	Create a docker image by dockerfile.
+
+
+
+Creating a docker image by command:
+	docker pull <image_name>
+
+Creating a docker image from dockerfile:
+	FROM nginx:latest
