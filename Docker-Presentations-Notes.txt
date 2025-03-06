@@ -16,6 +16,9 @@ How the Images is Created?
 	and then it will perform some operations and create a layer on top of the base layer images.
 	we can also create a image from a container.
 
+Writeable layer:
+	It is layer where the modifications you done in the image are stored in the writable layer interface where it is stored in the containers folder.
+
 Image caching:
 	Image caching will reduce the build time of the image 
 Internal Working:
